@@ -1,0 +1,42 @@
+{
+  "name": "@pico-brief/audio-info",
+  "version": "1.0.0",
+  "description": "Extract duration, chapters, and album art from audio files (MP3, FLAC, OGG, MP4/M4A)",
+  "main": "dist/audioInfo.js",
+  "module": "dist/audioInfo.mjs",
+  "types": "dist/audioInfo.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/audioInfo.d.ts",
+      "import": "./dist/audioInfo.mjs",
+      "require": "./dist/audioInfo.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "audio",
+    "metadata",
+    "mp3",
+    "flac",
+    "ogg",
+    "mp4",
+    "wav",
+    "chapters",
+    "album-art",
+    "duration"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  }
+}

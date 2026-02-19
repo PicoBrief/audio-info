@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.js.map
+*.mjs.map
+.DS_Store
+.idea
