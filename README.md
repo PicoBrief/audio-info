@@ -33,11 +33,7 @@ import audioInfo from '@pico-brief/audio-info'
 import { readFileSync, writeFileSync } from 'fs'
 
 // Step 1: read the audio file into memory
-const nodeBuffer = readFileSync('my-song.mp3')
-const buffer = nodeBuffer.buffer.slice(
-    nodeBuffer.byteOffset,
-    nodeBuffer.byteOffset + nodeBuffer.byteLength,
-)
+const buffer = new Uint8Array(readFileSync('my-song.mp3')).buffer
 
 // Step 2: pass the buffer to audioInfo
 const info = audioInfo(buffer)
